@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi Página</title>
-	<style>
-		body {
-			background-color: #f2f2f2;
-			font-family: Arial, sans-serif;
-		}
-		h1 {
-			color: #008080;
-			text-align: center;
-		}
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			margin: 20px;
-		}
-	</style>
+	<title>Mi Portafolio Personal</title>
+     <style>
+        /* Estilos para el encabezado */
+    header {
+    background-color: #FFCF73;
+    color: hwb(48 8% 90%);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    header h1 {
+    font-size: 36px;
+    margin: 0;
+    }
+    /* Estilos para las secciones */
+    section {
+    margin-bottom: 20px;
+    }
+    section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    }
+    /* Estilos para las habilidades */
+    .skills {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .skills li {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    list-style: none;
+    }
+    .skills li span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    }
+    /* Estilos para el footer */
+    footer {
+    background-color: #BCE2F4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+      h1 {
+        font-size: 32px;
+        color: blue;
+      }
+
+      p {
+        font-size: 18px;
+        color: black;
+      }
+    </style>
 </head>
 <body>
-	<h1>Bienvenidos a mi página web</h1>
-	<p>Esta es una página de ejemplo que muestra cómo utilizar CSS en un archivo HTML.</p>
+    <img src="https://images.unsplash.com/photo-1682688759457-52bcb4dc1578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60" alt="Descripción de la imagen">
+	<header>
+		<h1>Janier Mosquera</h1>
+		<nav>
+			<ul>
+				<li><a href="#acerca-de-mi">Acerca de mí</a></li>
+				<li><a href="#proyectos">Proyectos</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul> 
+		</nav>
+	</header>
+
+	<main>
+		<section id="acerca-de-mi">
+			<h2>Acerca de mí</h2>
+			<p>Soy Janier Mosquera, analista de datos con experiencia en Power Platform de Microsoft 365. Me apasiona el análisis de datos y crear indicadores de gestión eficientes.</p>
+		</section>
+
+		<section id="proyectos">
+			<h2>Proyectos</h2>
+			<ul>
+				<li><a href="#">Proyecto 1</a></li>
+				<li><a href="#">Proyecto 2</a></li>
+				<li><a href="#">Proyecto 3</a></li>
+			</ul>
+		</section>
+
+		<section id="contacto">
+			<h2>Contacto</h2>
+			<form>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" required></textarea>
+
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>Derechos Reservados &copy; 2023</p>
+	</footer>
 </body>
 </html>
+
